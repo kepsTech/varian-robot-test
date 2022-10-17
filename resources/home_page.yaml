@@ -1,0 +1,5 @@
+# Locators
+login_instruction:        //p[@class ="description login-description" and contains(text(), "Please enter") ]
+log_problem:              //div[@class="ds-button__label" and text()="Problems logging in?"]
+dont_have_account:         //div[@class="ds-button__label" and text()="Don't have an account?"]
+logo_design:              //div[@class="login-logo login-logo--noona"]

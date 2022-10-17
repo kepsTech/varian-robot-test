@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20221016 19:53:27.188" rpa="false" schemaversion="3">
+<suite id="s1" name="Varian Home Page" source="/Users/onikepoafolabi/PycharmProjects/varian_robot_test/tests/varian_home_page.robot">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Go To Varian Login Page</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Go To Varian Login Page" library="common">
+<doc>opens varian login page</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221016 19:53:27.248" level="INFO">Opening browser 'chrome' to base url 'https://demo.patient.noonatest.com/patient/#/login'.</msg>
+<status status="PASS" starttime="20221016 19:53:27.248" endtime="20221016 19:53:29.334"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${WELCOME_LOCATOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221016 19:53:29.335" endtime="20221016 19:53:29.828"/>
+</kw>
+<status status="PASS" starttime="20221016 19:53:27.248" endtime="20221016 19:53:29.828"/>
+</kw>
+<status status="PASS" starttime="20221016 19:53:27.248" endtime="20221016 19:53:29.828"/>
+</kw>
+<test id="s1-t1" name="Verify That URL Directs Opens Varial Login Page" line="12">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${WELCOME_LOCATOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221016 19:53:29.829" endtime="20221016 19:53:29.838"/>
+</kw>
+<doc>Verifies that urls directs us to the login page</doc>
+<status status="PASS" starttime="20221016 19:53:29.828" endtime="20221016 19:53:29.838"/>
+</test>
+<test id="s1-t2" name="Verify That Login Instruction Appears Upon Navigation To URL" line="16">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOGIN_INSTRUCTION}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221016 19:53:29.838" endtime="20221016 19:53:29.851"/>
+</kw>
+<doc>Verifies that upon nvgation to login urls, a login instruction appears</doc>
+<status status="PASS" starttime="20221016 19:53:29.838" endtime="20221016 19:53:29.851"/>
+</test>
+<test id="s1-t3" name="Verify That The Language Options Appears" line="20">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LANGUAGE_DROPDOWN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221016 19:53:29.852" endtime="20221016 19:53:29.866"/>
+</kw>
+<doc>Verifies That The Language Text and Drop down is Visible</doc>
+<status status="PASS" starttime="20221016 19:53:29.851" endtime="20221016 19:53:29.866"/>
+</test>
+<test id="s1-t4" name="Verify That The Problems Logging In Text is Visible" line="24">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOG_PROBLEM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221016 19:53:29.867" endtime="20221016 19:53:29.881"/>
+</kw>
+<doc>Verifies That The Problems Logging In is Visible</doc>
+<status status="PASS" starttime="20221016 19:53:29.867" endtime="20221016 19:53:29.881"/>
+</test>
+<test id="s1-t5" name="Verify That The Dont Have An Account Text is Visible" line="28">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DONT_HAVE_ACCOUNT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221016 19:53:29.881" endtime="20221016 19:53:29.890"/>
+</kw>
+<doc>Verifies That The Dont Have An Account is Visible</doc>
+<status status="PASS" starttime="20221016 19:53:29.881" endtime="20221016 19:53:29.890"/>
+</test>
+<test id="s1-t6" name="Verify That The Logo Design is Visible" line="32">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LOGO_DESIGN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221016 19:53:29.890" endtime="20221016 19:53:29.898"/>
+</kw>
+<doc>Verifies That The Logo Design is Visible</doc>
+<status status="PASS" starttime="20221016 19:53:29.890" endtime="20221016 19:53:29.898"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221016 19:53:29.899" endtime="20221016 19:53:29.962"/>
+</kw>
+<doc>Test collection for varian home page</doc>
+<status status="PASS" starttime="20221016 19:53:27.189" endtime="20221016 19:53:29.962"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Varian Home Page">Varian Home Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

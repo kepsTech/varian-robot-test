@@ -1,0 +1,6 @@
+# Locators
+email_address_loccator:      "//input[@id='email']"
+password_locator:            "//input[@id='pwd']"
+log_in_locator:              "//*[@id='email-and-password-next-button']/button/div"
+disable_login:               "//button[@type='submit' and @disabled]"
+error_message:                "//p[contains(text(), 'Incorrect username or password')]"

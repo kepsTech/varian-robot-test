@@ -1,0 +1,7 @@
+valid_credential:
+    email:      "afolanionikepo@gmail.com"
+    password:   "1234567"
+
+invalid_credential:
+    email:      "afolabi.com"
+    password:   "123344"
